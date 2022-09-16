@@ -12,6 +12,7 @@
   height: 100vh;
 }
 
+
 .head{
   width: 85%;
   height: 15%;
@@ -38,6 +39,17 @@
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
 }
+@media(max-width:767px){
+  .head{
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media(max-width:767px){
+  .head button{
+    margin: 0 30px 0 20px;
+  }
+}
 
 .content{
   position: absolute;
@@ -58,6 +70,11 @@
   font-size: 100px;
 }
 
+@media(max-width:767px){
+  .content h2{
+    font-size:60px;
+  }
+}
 .content button{
   width: 130px;
   height:40px;
@@ -142,7 +159,7 @@
 }
 
 .anim img{
-  width: 50px;
+  max-width: 50px;
   animation: movee 8s linear infinite;
   -webkit-animation: movee 8s linear infinite;
 }
@@ -174,31 +191,37 @@
 }
 
 .anim img:nth-child(1){
-  width: 40px;
+  max-width: 40px;
   animation-delay: 1s;
 }
 .anim img:nth-child(2){
-  width: 70px;
+  max-width: 70px;
   animation-delay: 6s;
 }
 .anim img:nth-child(3){
-  width: 60px;
+  max-width: 60px;
   animation-delay: 8s;
 }
 .anim img:nth-child(4){
-  width: 100px;
+  max-width: 100px;
   animation-delay: 4.5s;
 }
 .anim img:nth-child(5){
-  width: 75px;
+  max-width: 75px;
   animation-delay: 3s;
 }
 .anim img:nth-child(6){
-  width: 90px;
+  max-width: 90px;
   animation-delay: 6s;
 }
-.anim img:nth-child(7){
-  animation-delay: 1.5s;
+.anim img:nth-child(6){
+  max-width: 70px;
+  animation-delay: 7s;
+}
+@media(max-width:767px){
+  .anim img{
+    max-width: 1px;
+  }
 }
 
 
