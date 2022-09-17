@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+body{
   font-family: cursive;
 }
 
@@ -9,7 +12,9 @@
   position: relative;
   background-image: url(../images/background.png);
   background-size: cover;
+  background-position:center;
   height: 100vh;
+
 }
 
 
@@ -72,7 +77,7 @@
 
 @media(max-width:767px){
   .content h2{
-    font-size:60px;
+    font-size:50px;
   }
 }
 .content button{
@@ -219,8 +224,8 @@
   animation-delay: 7s;
 }
 @media(max-width:767px){
-  .anim img{
-    max-width: 1px;
+  .anim {
+    max-width: 100%;
   }
 }
 
